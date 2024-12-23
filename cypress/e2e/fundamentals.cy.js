@@ -4,7 +4,7 @@ describe('Fundamentals test', () => {
   });
 
   it('Contains correct header test', () => {
-    cy.get('[data-test="fundamentals-header"]').should('contain.text', 'Testing Fundamentals')
+    cy.getDataTest('fundamentals-header').should('contain.text', 'Testing Fundamentals')
   })
 
   it('Accordion works correctly', () => {
