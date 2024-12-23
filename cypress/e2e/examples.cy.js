@@ -16,4 +16,14 @@ describe('Various examples', () => {
         cy.getDataTest('nav-why-forms').click();
         cy.location('pathname').should('eq', '/forms');
     })
+
+    it('intercepts', () => {
+        cy.intercept('POST', 'http://localhost:3000/examples', {
+            body: {
+                message: 'successfully intercepted request'
+            }
+        })
+        
+        cy.getDataTest('post-button').click();
+    })
 })
