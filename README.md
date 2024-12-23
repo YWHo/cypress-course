@@ -1,8 +1,16 @@
 
+## Project setup
+
 Note: This project is clone from:
  https://github.com/coderyansolomon/cypress-course
 
 Reference: https://www.youtube.com/watch?v=u8vMu7viCm8
+
+---
+
+## Cypress testing
+
+To run cypress: `npx cypress open`
 
 ---
 
