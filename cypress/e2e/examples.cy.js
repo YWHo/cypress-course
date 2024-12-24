@@ -25,7 +25,7 @@ describe('Various examples', () => {
         cy.getDataTest('post-button').click();
     })
 
-    it.only('grudges', () => {
+    it('grudges', () => {
         cy.contains(/Add Some Grudges/i);
 
         cy.getDataTest('grudge-list').within(() => {
